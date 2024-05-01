@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <meta name="title" content="Título del proyecto">
+    <meta name="description" content="Breve descripción del contenido del proyecto">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Blog Preview Card - Pablo Fernandez Aduviri</title>
+
+    <style>
+
+        /* ----- Fuente ----- */
+        @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+        /* ----- Variables ----- */
+        :root {
+            /* colores */
+            --color: #181a1b;
+
+            /* config. */
+            --fuente: "Figtree", sans-serif;
+            --ft-size: 1rem;
+            --l-height: 22px;
+        }
+
+        /* ----------------------------- */
+        /* ----- Estilos generales ----- */
+        /* ----------------------------- */
+        body {
+            font-family: var(--fuente);
+            background: rgb(245, 208, 78);
+            color: var(--color);
+        }
+
+        .container{
+            display: grid;
+            place-items: center;
+            height: 100dvh;
+        }
+
+        .card{
+            width: 25rem;
+            background: rgb(255, 255, 255);
+            border: 1px solid black;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            
+            & img:nth-child(1){
+                width: 90%;
+                aspect-ratio: 2/1;
+                margin: 20px;
+                border-radius: 12px;
+            }
+            
+            & button{
+                width: 4.5rem;
+                background: rgb(250, 204, 79);
+                border: none;
+                padding: 5px;
+                margin-left: 20px;
+                border-radius: 5px;
+            }
+
+            & span{
+                margin: 20px;
+            }
+            & h2{
+                font-size: 22px;
+                margin: 8px 20px 8px 20px;
+            }
+
+            & p{
+                font-size: 15px;
+                margin: 20px;
+                color: rgb(181, 174, 165);
+            }
+            
+            & .profile{
+                & img{
+                    display: inline;
+                    margin: 10px 0px 0px 20px;
+                    width: 35px;
+                    aspect-ratio: 1/1;
+                }
+                & h5{
+                    margin-left: 20px;
+                    margin-top: -1px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="images/fondo.png" alt="">
+            <button>Learning</button>
+            <span>Published 21 Dec 2023</span>
+            <h2>HTML & CSS foundations</h2>
+            <p>These languages are the backbone of every website,
+                defining structure. content. and presentation.</p>
+            <div class="profile">
+                <img src="images/image-avatar.webp" alt="">
+                <h5>Greg Hooper</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
