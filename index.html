@@ -50,6 +50,7 @@
         }
 
         .card{
+            transition: .5s all;
             width: 25rem;
             background: rgb(255, 255, 255);
             border: 1px solid black;
@@ -80,26 +81,40 @@
             & h2{
                 font-size: 22px;
                 margin: 8px 20px 8px 20px;
+                transition: .5s all;
+            }
+
+            & h2:hover{
+                color: rgb(245, 208, 78);
             }
 
             & p{
-                font-size: 15px;
+                font-size: 16px;
                 margin: 20px;
                 color: rgb(181, 174, 165);
             }
             
             & .profile{
+                display: flex;
                 & img{
                     display: inline;
-                    margin: 10px 0px 0px 20px;
+                    margin: 10px 0px 20px 20px;
                     width: 35px;
                     aspect-ratio: 1/1;
                 }
                 & h5{
-                    margin-left: 20px;
-                    margin-top: -1px;
+                    margin-left: 10px;
+                    transition: .5s all;
+                }
+
+                & h5:hover{
+                    color: rgb(245, 208, 78);
                 }
             }
+        }
+
+        .card:hover{
+            box-shadow: 15px 15px;
         }
     </style>
 </head>
